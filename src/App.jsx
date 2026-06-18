@@ -1,6 +1,5 @@
 import { useGameState } from './hooks/useGameState';
 import Map from './components/Map';
-import ResultPanel from './components/ResultPanel';
 import ScoreCard from './components/ScoreCard';
 import GameHeader from './components/GameHeader';
 
@@ -35,16 +34,9 @@ export default function App() {
           guess={currentGuess}
           answer={currentClue}
           disabled={showResult || gameComplete}
+          onNext={advanceRound}
+          isLastRound={currentRound === dailyClues.length - 1}
         />
-
-        {showResult && !gameComplete && (
-          <ResultPanel
-            clue={currentClue}
-            guess={currentGuess}
-            onNext={advanceRound}
-            isLastRound={currentRound === dailyClues.length - 1}
-          />
-        )}
 
         {gameComplete && (
           <ScoreCard
