@@ -1,0 +1,302 @@
+[
+  {
+    "id": "statue-of-liberty",
+    "category": "landmark",
+    "borough": "manhattan",
+    "clue": "Statue of Liberty",
+    "answer_label": "Statue of Liberty",
+    "lat": 40.6892,
+    "lng": -74.0445,
+    "fun_fact": "She was a gift from France, but New Yorkers had to fundraise to build her pedestal."
+  },
+  {
+    "id": "empire-state-building",
+    "category": "landmark",
+    "borough": "manhattan",
+    "clue": "Empire State Building",
+    "answer_label": "Empire State Building",
+    "lat": 40.7484,
+    "lng": -73.9856,
+    "fun_fact": "It was built in just 410 days during the Great Depression."
+  },
+  {
+    "id": "brooklyn-bridge",
+    "category": "landmark",
+    "borough": "brooklyn",
+    "clue": "Brooklyn Bridge",
+    "answer_label": "Brooklyn Bridge",
+    "lat": 40.7061,
+    "lng": -73.9969,
+    "fun_fact": "Its chief engineer died from an injury sustained during its construction. His wife oversaw the rest of the build."
+  },
+  {
+    "id": "grand-central",
+    "category": "landmark",
+    "borough": "manhattan",
+    "clue": "Grand Central Terminal",
+    "answer_label": "Grand Central Terminal",
+    "lat": 40.7527,
+    "lng": -73.9772,
+    "fun_fact": "The ceiling's famous constellation mural is painted backwards — a medieval manuscript error copied faithfully."
+  },
+  {
+    "id": "yankee-stadium",
+    "category": "landmark",
+    "borough": "bronx",
+    "clue": "Yankee Stadium",
+    "answer_label": "Yankee Stadium",
+    "lat": 40.8296,
+    "lng": -73.9262,
+    "fun_fact": "The current stadium opened in 2009, directly across the street from the original."
+  },
+  {
+    "id": "high-line",
+    "category": "landmark",
+    "borough": "manhattan",
+    "clue": "The High Line",
+    "answer_label": "The High Line",
+    "lat": 40.7480,
+    "lng": -74.0048,
+    "fun_fact": "It was saved from demolition by two neighbors who fought for it for nearly a decade."
+  },
+  {
+    "id": "coney-island-cyclone",
+    "category": "landmark",
+    "borough": "brooklyn",
+    "clue": "Coney Island Cyclone",
+    "answer_label": "Coney Island Cyclone",
+    "lat": 40.5745,
+    "lng": -73.9796,
+    "fun_fact": "Charles Lindbergh rode it and said it was scarier than flying the Atlantic."
+  },
+  {
+    "id": "unisphere",
+    "category": "landmark",
+    "borough": "queens",
+    "clue": "Unisphere",
+    "answer_label": "Unisphere, Flushing Meadows",
+    "lat": 40.7099,
+    "lng": -73.8445,
+    "fun_fact": "It was built for the 1964 World's Fair and weighs 700,000 pounds."
+  },
+  {
+    "id": "snug-harbor",
+    "category": "landmark",
+    "borough": "staten_island",
+    "clue": "Snug Harbor Cultural Center",
+    "answer_label": "Snug Harbor Cultural Center",
+    "lat": 40.6435,
+    "lng": -74.1015,
+    "fun_fact": "Its Greek Revival buildings are among the finest examples of the style in the United States."
+  },
+  {
+    "id": "flatiron",
+    "category": "landmark",
+    "borough": "manhattan",
+    "clue": "Flatiron Building",
+    "answer_label": "Flatiron Building",
+    "lat": 40.7411,
+    "lng": -73.9897,
+    "fun_fact": "The wind tunnel it creates on 23rd Street was so notorious that police coined the phrase '23 skidoo' to shoo away men watching women's skirts blow up."
+  },
+  {
+    "id": "broadway-fulton",
+    "category": "cross_street",
+    "borough": "manhattan",
+    "clue": "The corner where the Dutch first established a marketplace in New Amsterdam",
+    "answer_label": "Broadway & Fulton St",
+    "lat": 40.7091,
+    "lng": -74.0088,
+    "fun_fact": "This area was the commercial heart of Manhattan before the city expanded northward."
+  },
+  {
+    "id": "malcolm-x-audubon",
+    "category": "cross_street",
+    "borough": "manhattan",
+    "clue": "The Washington Heights corner where Malcolm X was assassinated in 1965",
+    "answer_label": "Malcolm X Blvd & W 166th St",
+    "lat": 40.8376,
+    "lng": -73.9393,
+    "fun_fact": "The Audubon Ballroom where he was shot has since been converted into a biomedical research center, with a small memorial preserved in the lobby."
+  },
+  {
+    "id": "bedford-grove",
+    "category": "cross_street",
+    "borough": "brooklyn",
+    "clue": "The epicenter of Bedford-Stuyvesant, named after a Lenape chief",
+    "answer_label": "Bedford Ave & Grove St",
+    "lat": 40.6832,
+    "lng": -73.9556,
+    "fun_fact": "Bed-Stuy takes its name from two colonial-era towns that merged: Bedford and Stuyvesant Heights."
+  },
+  {
+    "id": "queens-blvd-junction",
+    "category": "cross_street",
+    "borough": "queens",
+    "clue": "Once nicknamed the Boulevard of Death for its deadly pedestrian crossings",
+    "answer_label": "Queens Blvd & Junction Blvd",
+    "lat": 40.7196,
+    "lng": -73.8698,
+    "fun_fact": "After a years-long safety campaign, Queens Blvd was redesigned with protected lanes and pedestrian islands, and fatalities dropped dramatically."
+  },
+  {
+    "id": "jerome-161st",
+    "category": "cross_street",
+    "borough": "bronx",
+    "clue": "The corner that puts you right at the gates of Yankee Stadium",
+    "answer_label": "Jerome Ave & E 161st St",
+    "lat": 40.8279,
+    "lng": -73.9262,
+    "fun_fact": "The elevated 4 train that runs along Jerome Ave has carried Yankees fans to games since 1918."
+  },
+  {
+    "id": "canal-broadway",
+    "category": "cross_street",
+    "borough": "manhattan",
+    "clue": "Where SoHo ends, Chinatown begins, and Tribeca waves from across the street",
+    "answer_label": "Canal St & Broadway",
+    "lat": 40.7191,
+    "lng": -74.0007,
+    "fun_fact": "Canal Street follows the path of an actual canal that was filled in 1820 to create the road."
+  },
+  {
+    "id": "surf-stillwell",
+    "category": "cross_street",
+    "borough": "brooklyn",
+    "clue": "The end of the line — literally — for the D, F, N, and Q trains",
+    "answer_label": "Surf Ave & Stillwell Ave",
+    "lat": 40.5775,
+    "lng": -73.9814,
+    "fun_fact": "The Stillwell Avenue station is the largest above-ground subway terminal in the world."
+  },
+  {
+    "id": "vanderbilt-park-hill",
+    "category": "cross_street",
+    "borough": "staten_island",
+    "clue": "The Staten Island block where hip-hop history was quietly being written",
+    "answer_label": "Vanderbilt Ave & Park Hill Ave",
+    "lat": 40.6062,
+    "lng": -74.0851,
+    "fun_fact": "Several Wu-Tang Clan members grew up in the Park Hill Apartments nearby, which they called Killa Hill."
+  },
+  {
+    "id": "myrtle-broadway",
+    "category": "cross_street",
+    "borough": "brooklyn",
+    "clue": "Where Bushwick begins and the J/M/Z rumbles overhead",
+    "answer_label": "Myrtle Ave & Broadway",
+    "lat": 40.6975,
+    "lng": -73.9370,
+    "fun_fact": "The elevated J/M/Z train above Broadway here was part of the inspiration for the 'el' scenes in countless NYC films."
+  },
+  {
+    "id": "fordham-grand-concourse",
+    "category": "cross_street",
+    "borough": "bronx",
+    "clue": "The grandest intersection on the Bronx's answer to the Champs-Élysées",
+    "answer_label": "Fordham Rd & Grand Concourse",
+    "lat": 40.8618,
+    "lng": -73.8988,
+    "fun_fact": "The Grand Concourse was modeled after Paris's grand boulevards and was once lined with Art Deco apartment buildings."
+  },
+  {
+    "id": "katz-deli",
+    "category": "pop_culture",
+    "borough": "manhattan",
+    "clue": "Where Meg Ryan proved a point about authenticity",
+    "answer_label": "Katz's Delicatessen",
+    "lat": 40.7223,
+    "lng": -73.9874,
+    "fun_fact": "Table 25 still has a sign above it marking the exact spot from When Harry Met Sally."
+  },
+  {
+    "id": "toms-restaurant",
+    "category": "pop_culture",
+    "borough": "manhattan",
+    "clue": "The diner exterior that a generation knows as Monk's Cafe",
+    "answer_label": "Tom's Restaurant",
+    "lat": 40.8053,
+    "lng": -73.9643,
+    "fun_fact": "It also inspired the Suzanne Vega song 'Tom's Diner,' recorded while she was a student at nearby Barnard College."
+  },
+  {
+    "id": "ghostbusters-firehouse",
+    "category": "pop_culture",
+    "borough": "manhattan",
+    "clue": "The Tribeca firehouse that became headquarters for New York's most unconventional pest control team",
+    "answer_label": "Hook & Ladder Co. 8",
+    "lat": 40.7191,
+    "lng": -74.0065,
+    "fun_fact": "It's a fully functioning firehouse. The Ghostbusters sign outside is a permanent tribute."
+  },
+  {
+    "id": "brooklyn-heights-promenade",
+    "category": "pop_culture",
+    "borough": "brooklyn",
+    "clue": "The waterfront esplanade where Moonstruck, Annie Hall, and countless other films captured the Manhattan skyline",
+    "answer_label": "Brooklyn Heights Promenade",
+    "lat": 40.6963,
+    "lng": -73.9988,
+    "fun_fact": "Woody Allen filmed the opening sequence of Manhattan here at 4am to capture the sunrise over the skyline."
+  },
+  {
+    "id": "conservatory-water",
+    "category": "pop_culture",
+    "borough": "manhattan",
+    "clue": "The Central Park pond where Stuart Little raced his sailboat",
+    "answer_label": "Conservatory Water, Central Park",
+    "lat": 40.7739,
+    "lng": -73.9663,
+    "fun_fact": "Model boat racing has been a tradition here since the 1930s. Rentable remote-control boats are still available on weekends."
+  },
+  {
+    "id": "wu-tang-shaolin",
+    "category": "pop_culture",
+    "borough": "staten_island",
+    "clue": "The borough that one rap collective put on the map by calling it Shaolin",
+    "answer_label": "Staten Island — St. George area",
+    "lat": 40.6438,
+    "lng": -74.0739,
+    "fun_fact": "Wu-Tang Clan named Staten Island 'Shaolin' after the Shaolin Temple in kung fu films, a nod to their martial arts obsession."
+  },
+  {
+    "id": "saturday-night-fever-bridge",
+    "category": "pop_culture",
+    "borough": "brooklyn",
+    "clue": "Tony Manero strutted across this bridge in the opening scene of Saturday Night Fever",
+    "answer_label": "86th St & New Utrecht Ave, Bay Ridge",
+    "lat": 40.6229,
+    "lng": -74.0091,
+    "fun_fact": "The film put Bay Ridge on the map. The neighborhood still holds an annual Saturday Night Fever tribute walk."
+  },
+  {
+    "id": "queens-museum",
+    "category": "pop_culture",
+    "borough": "queens",
+    "clue": "The fictional MIB headquarters is hidden beneath this real Queens landmark",
+    "answer_label": "Queens Museum, Flushing Meadows",
+    "lat": 40.7456,
+    "lng": -73.8468,
+    "fun_fact": "The Queens Museum houses a 9,335 square foot scale model of every building in NYC, called the Panorama of the City of New York."
+  },
+  {
+    "id": "bronx-zoo",
+    "category": "pop_culture",
+    "borough": "bronx",
+    "clue": "Where Alex the Lion dreamed of something wilder than New York",
+    "answer_label": "Bronx Zoo",
+    "lat": 40.8506,
+    "lng": -73.8769,
+    "fun_fact": "The Bronx Zoo is one of the largest metropolitan zoos in the world, covering 265 acres."
+  },
+  {
+    "id": "columbus-circle",
+    "category": "pop_culture",
+    "borough": "manhattan",
+    "clue": "Travis Bickle's cab circled this roundabout obsessively in Scorsese's 1976 masterpiece",
+    "answer_label": "Columbus Circle",
+    "lat": 40.7681,
+    "lng": -73.9819,
+    "fun_fact": "Columbus Circle is the official geographic center from which all NYC distances are measured."
+  }
+]
