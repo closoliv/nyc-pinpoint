@@ -21,14 +21,6 @@ ${totalScore} / 3000`;
       <h1 className="scorecard-title">NYC Pinpoint</h1>
       <p className="scorecard-date">{today}</p>
 
-      <div className="scorecard-emojis">
-        {scores.map((s, i) => (
-          <span key={i}>{getScoreEmoji(s)}</span>
-        ))}
-      </div>
-
-      <div className="scorecard-total">{totalScore} / 3000</div>
-
       <div className="scorecard-breakdown">
         {clues.map((clue, i) => (
           <div key={clue.id} className="scorecard-row">
@@ -36,6 +28,11 @@ ${totalScore} / 3000`;
             <span className="scorecard-row-score">{getScoreEmoji(scores[i])} {scores[i]}</span>
           </div>
         ))}
+
+        <div className="scorecard-row scorecard-row-total">
+          <span className="scorecard-row-label">Total</span>
+          <span className="scorecard-row-score">{totalScore} / 3000</span>
+        </div>
       </div>
 
       <button className="share-btn" onClick={handleShare}>

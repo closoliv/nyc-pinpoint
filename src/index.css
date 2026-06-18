@@ -244,21 +244,6 @@ html, body, #root {
   margin-bottom: 20px;
 }
 
-.scorecard-emojis {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  font-size: 32px;
-  margin-bottom: 8px;
-}
-
-.scorecard-total {
-  text-align: center;
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
 .scorecard-breakdown {
   display: flex;
   flex-direction: column;
@@ -279,6 +264,19 @@ html, body, #root {
 
 .scorecard-row-score {
   font-weight: 600;
+}
+
+.scorecard-row-total {
+  margin-top: 4px;
+  padding-top: 12px;
+  border-top: 1px solid #e0e0e0;
+  font-size: 17px;
+}
+
+.scorecard-row-total .scorecard-row-label,
+.scorecard-row-total .scorecard-row-score {
+  font-weight: 800;
+  color: #111;
 }
 
 .share-btn {
