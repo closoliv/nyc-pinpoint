@@ -34,10 +34,21 @@ html, body, #root {
   margin-bottom: 8px;
 }
 
+.header-titles {
+  display: flex;
+  flex-direction: column;
+}
+
 .header-title {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: -0.5px;
+}
+
+.header-date {
+  font-size: 12px;
+  font-weight: 500;
+  color: #999;
 }
 
 .header-score {
