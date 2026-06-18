@@ -36,6 +36,9 @@ export default function App() {
           disabled={showResult || gameComplete}
           onNext={advanceRound}
           isLastRound={currentRound === dailyClues.length - 1}
+          gameComplete={gameComplete}
+          allGuesses={guesses}
+          allClues={dailyClues}
         />
 
         {gameComplete && (
