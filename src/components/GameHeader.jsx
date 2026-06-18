@@ -1,10 +1,18 @@
 export default function GameHeader({ currentRound, totalScore, currentClue, gameComplete }) {
   const categories = ['Landmark', 'Cross Street', 'Pop Culture'];
+  const today = new Date().toLocaleDateString('en-US', {
+    weekday: 'long',
+    month: 'long',
+    day: 'numeric',
+  });
 
   return (
     <div className="game-header">
       <div className="header-top">
-        <span className="header-title">NYC Pinpoint</span>
+        <div className="header-titles">
+          <span className="header-title">NYC Pinpoint</span>
+          <span className="header-date">{today}</span>
+        </div>
         <span className="header-score">{totalScore} pts</span>
       </div>
 
