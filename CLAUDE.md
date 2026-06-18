@@ -84,7 +84,7 @@ NYC Pinpoint — June 17
   1. Player drops a pin anywhere on the map
   2. "Submit Guess" button appears (floating, bottom center)
   3. On submit: correct answer pin appears, dashed line drawn between pins, map flies to fit both
-  4. Result panel slides up from bottom: emoji + points earned + answer label + distance + fun fact
+  4. Result tooltip floats over the map, anchored to the answer pin: emoji + points earned + answer label + distance + fun fact. Flips above/below and left/right-aligns to stay on-screen and avoid covering the pins.
   5. "Next Round →" or "See Final Score" button advances
 - **Score card** — slides up from bottom on game complete, shows breakdown per round + share button
 - **Share** — uses `navigator.share` on mobile, falls back to clipboard copy on desktop
@@ -132,7 +132,7 @@ nyc-pinpoint/
 │   ├── components/
 │   │   ├── Map.jsx           # Mapbox map, pin drop, result reveal, line drawing
 │   │   ├── GameHeader.jsx    # Title, score, round pips, clue text
-│   │   ├── ResultPanel.jsx   # Slides up after each guess: score, distance, fun fact
+│   │   ├── ResultTooltip.jsx # Floats over the map after each guess: score, distance, fun fact
 │   │   └── ScoreCard.jsx     # End screen: breakdown, share button
 │   ├── data/
 │   │   └── clues.json        # All clue content — edit this to add/change clues

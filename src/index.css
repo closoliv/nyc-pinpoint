@@ -153,65 +153,62 @@ html, body, #root {
   transform: translateX(-50%) scale(0.97);
 }
 
-/* Result panel */
-.result-panel {
+/* Result tooltip — floats over the map, anchored to the answer pin */
+.result-tooltip {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #fff;
-  border-radius: 20px 20px 0 0;
-  padding: 24px 20px;
-  box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+  width: 240px;
+  background: rgba(17, 17, 17, 0.88);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  border-radius: 14px;
+  padding: 14px 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
   z-index: 20;
 }
 
-.result-header {
+.result-tooltip-header {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 8px;
+  gap: 8px;
+  margin-bottom: 6px;
 }
 
 .result-emoji {
-  font-size: 28px;
+  font-size: 20px;
 }
 
 .result-score {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 700;
 }
 
 .result-label {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .result-distance {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 12px;
+  font-size: 13px;
+  color: #ccc;
+  margin-bottom: 10px;
 }
 
 .result-funfact {
-  font-size: 14px;
-  color: #444;
-  line-height: 1.5;
-  background: #f9f9f9;
-  border-radius: 10px;
-  padding: 12px;
-  margin-bottom: 16px;
+  font-size: 12px;
+  color: #ddd;
+  line-height: 1.4;
+  margin-bottom: 12px;
 }
 
 .next-btn {
   width: 100%;
-  background: #111;
-  color: #fff;
+  background: #fff;
+  color: #111;
   border: none;
-  border-radius: 12px;
-  padding: 14px;
-  font-size: 16px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
   font-weight: 600;
   cursor: pointer;
 }

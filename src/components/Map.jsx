@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
+import ResultTooltip from './ResultTooltip';
 
 mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN;
 
@@ -11,13 +12,21 @@ const NYC_BOUNDS = [
 
 const NYC_CENTER = [-73.9857, 40.7484];
 
-export default function Map({ onGuess, showResult, guess, answer, disabled }) {
+// Assumed tooltip footprint, used to keep it fully on-screen
+const TOOLTIP_WIDTH = 240;
+const TOOLTIP_MAX_HEIGHT = 220;
+const MARGIN = 12;
+
+const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+
+export default function Map({ onGuess, showResult, guess, answer, disabled, onNext, isLastRound }) {
   const mapContainer = useRef(null);
   const map = useRef(null);
   const markerRef = useRef(null);
   const answerMarkerRef = useRef(null);
   const lineRef = useRef(null);
   const [pendingGuess, setPendingGuess] = useState(null);
+  const [tooltipPos, setTooltipPos] = useState(null);
 
   useEffect(() => {
     if (map.current) return;
@@ -109,6 +118,29 @@ export default function Map({ onGuess, showResult, guess, answer, disabled }) {
 
     map.current.fitBounds(bounds, { padding: 80, maxZoom: 14 });
 
+    // Keep the result tooltip anchored to the answer pin as the map flies/pans,
+    // clamped so it always stays fully within the map container.
+    const updateTooltipPosition = () => {
+      const point = map.current.project([answer.lng, answer.lat]);
+      const containerHeight = mapContainer.current.clientHeight;
+      const containerWidth = mapContainer.current.clientWidth;
+
+      const placeAbove = point.y > containerHeight * 0.45;
+      const left = clamp(point.x - TOOLTIP_WIDTH / 2, MARGIN, containerWidth - TOOLTIP_WIDTH - MARGIN);
+      const top = clamp(
+        placeAbove ? point.y - TOOLTIP_MAX_HEIGHT - 16 : point.y + 16,
+        MARGIN,
+        containerHeight - TOOLTIP_MAX_HEIGHT - MARGIN
+      );
+      setTooltipPos({ left, top });
+    };
+
+    map.current.on('move', updateTooltipPosition);
+    updateTooltipPosition();
+
+    return () => {
+      map.current?.off('move', updateTooltipPosition);
+    };
   }, [showResult]);
 
   // Cleanup between rounds
@@ -121,6 +153,7 @@ export default function Map({ onGuess, showResult, guess, answer, disabled }) {
         map.current.removeSource('guess-line');
       }
       setPendingGuess(null);
+      setTooltipPos(null);
       map.current?.flyTo({ center: NYC_CENTER, zoom: 10 });
     }
   }, [showResult]);
@@ -135,6 +168,15 @@ export default function Map({ onGuess, showResult, guess, answer, disabled }) {
         >
           Submit Guess
         </button>
+      )}
+      {showResult && guess && answer && tooltipPos && (
+        <ResultTooltip
+          clue={answer}
+          guess={guess}
+          onNext={onNext}
+          isLastRound={isLastRound}
+          position={tooltipPos}
+        />
       )}
     </div>
   );

@@ -1,9 +1,9 @@
 import { formatDistance, getScoreEmoji } from '../utils/gameUtils';
 
-export default function ResultPanel({ clue, guess, onNext, isLastRound }) {
+export default function ResultTooltip({ clue, guess, onNext, isLastRound, position }) {
   return (
-    <div className="result-panel">
-      <div className="result-header">
+    <div className="result-tooltip" style={{ left: position.left, top: position.top }}>
+      <div className="result-tooltip-header">
         <span className="result-emoji">{getScoreEmoji(guess.score)}</span>
         <span className="result-score">+{guess.score}</span>
       </div>
